@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import confirmService from './confirmService';
+import confirmSvc from './confirmSvc';
 
 class App extends Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     async removeItem({target: {value}}) {
-        const result = await confirmService.show({
+        const result = await confirmSvc.show({
             message: 'Are you sure of delete this item?'
         });
         if (result) {

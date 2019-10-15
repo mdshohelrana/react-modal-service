@@ -18,7 +18,6 @@ class ConfirmService {
 
     show = (options) => {
         options = Object.assign(this.options, options);
-
     }
 }
 
